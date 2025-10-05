@@ -116,15 +116,14 @@ This project uses [Biome](https://biomejs.dev/) for code formatting, linting, an
 
 ```tsx
 // ✅ Good - Properly organized imports
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { SignInButton } from '@clerk/nextjs';
+import { SomeThirdPartyLib } from 'some-library';
 
-import { SignInButton } from "@clerk/nextjs";
-import { SomeThirdPartyLib } from "some-library";
-
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
 ```
 
 ### Automatic Import Sorting

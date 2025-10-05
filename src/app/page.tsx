@@ -1,9 +1,9 @@
-import { CTA, Footer, Header, Hero, HowItWorks, PricingSection, WhatToAsk } from "@/components/landing";
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
+import { CTA, Footer, Header, Hero, HowItWorks, PricingSection, WhatToAsk } from '@/components/landing';
 
 export default function Home() {
   return (
-    <div className={cn("min-h-screen bg-background")}>
+    <div className={cn('bg-background min-h-screen')}>
       <Header />
       <Hero />
       <HowItWorks />
