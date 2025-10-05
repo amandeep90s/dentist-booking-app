@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 export const Footer = () => {
   return (
-    <footer className={cn('bg-muted/30 border-t px-6 py-12')}>
+    <footer className={cn('bg-muted/30 border-t px-6 pt-12 pb-8')}>
       <div className={cn('mx-auto max-w-6xl')}>
         <div className={cn('grid gap-8 md:grid-cols-4')}>
           <div className={cn('space-y-4')}>
