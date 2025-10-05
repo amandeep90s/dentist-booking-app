@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Dentwise - AI Powered Dental Assistant",
-  description:
-    "Get instant answers to your dental questions with Dentwise, the AI-powered dental assistant.",
+  description: "Get instant answers to your dental questions with Dentwise, the AI-powered dental assistant.",
 };
 
 export default function RootLayout({
@@ -27,11 +26,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} dark antialiased`}
-        >
-          {children}
-        </body>
+        <body className={`${geistSans.variable} ${geistMono.variable} dark antialiased`}>{children}</body>
       </html>
     </ClerkProvider>
   );

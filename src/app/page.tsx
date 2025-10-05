@@ -1,12 +1,4 @@
-import {
-  CTA,
-  Footer,
-  Header,
-  Hero,
-  HowItWorks,
-  PricingSection,
-  WhatToAsk,
-} from "@/components/landing";
+import { CTA, Footer, Header, Hero, HowItWorks, PricingSection, WhatToAsk } from "@/components/landing";
 import { cn } from "@/lib/utils";
 
 export default function Home() {
