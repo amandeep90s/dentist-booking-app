@@ -11,7 +11,7 @@ export const HowItWorks = () => (
       <div
         className={cn(
           "inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-br from-primary/5 to-primary/10",
-          "rounded-full border border-primary/10 backdrop-blur-sm mb-6"
+          "rounded-full border border-primary/10 backdrop-blur-sm mb-6",
         )}
       >
         <ZapIcon className={cn("size-4 text-primary")} />
@@ -38,7 +38,7 @@ export const HowItWorks = () => (
       {/* Connection line */}
       <div
         className={cn(
-          "absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transform -translate-y-1/2 hidden lg:block"
+          "absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transform -translate-y-1/2 hidden lg:block",
         )}
       />
 
@@ -48,14 +48,14 @@ export const HowItWorks = () => (
           <div
             className={cn(
               "relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-border/50",
-              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
+              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10",
             )}
           >
             {/* Step Number */}
             <div
               className={cn(
                 "absolute -top-4 left-8 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center",
-                "text-primary-foreground text-sm font-bold shadow-lg"
+                "text-primary-foreground text-sm font-bold shadow-lg",
               )}
             >
               1
@@ -65,7 +65,7 @@ export const HowItWorks = () => (
             <div
               className={cn(
                 "w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center",
-                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6"
+                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6",
               )}
             >
               <Image src="/audio.png" alt="Voice Chat" width={40} height={40} className="w-14" />
@@ -90,14 +90,14 @@ export const HowItWorks = () => (
           <div
             className={cn(
               "relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-border/50",
-              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
+              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10",
             )}
           >
             {/* Step Number */}
             <div
               className={cn(
                 "absolute -top-4 left-8 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center",
-                "text-primary-foreground text-sm font-bold shadow-lg"
+                "text-primary-foreground text-sm font-bold shadow-lg",
               )}
             >
               2
@@ -107,7 +107,7 @@ export const HowItWorks = () => (
             <div
               className={cn(
                 "w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center",
-                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6"
+                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6",
               )}
             >
               <Image src="/brain.png" alt="AI Brain" width={40} height={40} className="w-14" />
@@ -132,14 +132,14 @@ export const HowItWorks = () => (
           <div
             className={cn(
               "relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl rounded-3xl p-8 border border-border/50",
-              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
+              "hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10",
             )}
           >
             {/* Step Number */}
             <div
               className={cn(
                 "absolute -top-4 left-8 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center",
-                "text-primary-foreground text-sm font-bold shadow-lg"
+                "text-primary-foreground text-sm font-bold shadow-lg",
               )}
             >
               3
@@ -149,7 +149,7 @@ export const HowItWorks = () => (
             <div
               className={cn(
                 "w-20 h-20 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center",
-                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6"
+                "mx-auto group-hover:scale-110 transition-transform duration-300 mb-6",
               )}
             >
               <Image src="/calendar.png" alt="Calendar" width={40} height={40} className="w-14" />
