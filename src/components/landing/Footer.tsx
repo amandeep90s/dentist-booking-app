@@ -1,82 +1,83 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className={cn("px-6 py-12 border-t bg-muted/30")}>
-      <div className={cn("max-w-6xl mx-auto")}>
-        <div className={cn("grid md:grid-cols-4 gap-8")}>
+    <footer className={cn("border-t bg-muted/30 px-6 py-12")}>
+      <div className={cn("mx-auto max-w-6xl")}>
+        <div className={cn("grid gap-8 md:grid-cols-4")}>
           <div className={cn("space-y-4")}>
             <div className={cn("flex items-center gap-2")}>
-              <Image src={"/logo.png"} alt="Dentist Booking App" width={32} height={32} className={cn("w-8 h-8")} />
+              <Image src={"/logo.png"} alt="Dentist Booking App" width={32} height={32} className={cn("h-8 w-8")} />
               <span className={cn("font-semibold text-lg")}>Dentist Booking App</span>
             </div>
-            <p className={cn("text-sm text-muted-foreground")}>AI-powered dental assistance that actually helps.</p>
+            <p className={cn("text-muted-foreground text-sm")}>AI-powered dental assistance that actually helps.</p>
           </div>
 
           <div>
-            <h4 className={cn("font-medium mb-3")}>Product</h4>
-            <ul className={cn("space-y-2 text-sm text-muted-foreground")}>
+            <h4 className={cn("mb-3 font-medium")}>Product</h4>
+            <ul className={cn("space-y-2 text-muted-foreground text-sm")}>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   How it works
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className={cn("font-medium mb-3")}>Support</h4>
-            <ul className={cn("space-y-2 text-sm text-muted-foreground")}>
+            <h4 className={cn("mb-3 font-medium")}>Support</h4>
+            <ul className={cn("space-y-2 text-muted-foreground text-sm")}>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Help center
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Contact us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Status
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className={cn("font-medium mb-3")}>Legal</h4>
-            <ul className={cn("space-y-2 text-sm text-muted-foreground")}>
+            <h4 className={cn("mb-3 font-medium")}>Legal</h4>
+            <ul className={cn("space-y-2 text-muted-foreground text-sm")}>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={cn("hover:text-foreground")}>
+                <Link href="/" className={cn("hover:text-foreground")}>
                   Security
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className={cn("border-t mt-8 pt-8 text-center text-sm text-muted-foreground")}>
+        <div className={cn("mt-8 border-t pt-8 text-center text-muted-foreground text-sm")}>
           <p>
             &copy; {new Date().getFullYear()} Dentist Booking App. Built for real people with real dental questions.
           </p>
