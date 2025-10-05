@@ -20,6 +20,13 @@
       "recommended": true,
       "suspicious": {
         "noUnknownAtRules": "off"
+      },
+      "style": {
+        "useImportType": "error",
+        "noNamespace": "off"
+      },
+      "nursery": {
+        "useSortedClasses": "error"
       }
     },
     "domains": {

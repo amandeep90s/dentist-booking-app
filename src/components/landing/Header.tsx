@@ -1,18 +1,19 @@
-import { cn } from "@/lib/utils";
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const Header = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 right-0 left-0 z-50 px-6 py-2 border-b border-border/50 bg-background/80 backdrop-blur-md h-16"
+        "fixed top-0 right-0 left-0 z-50 h-16 border-border/50 border-b bg-background/80 px-6 py-2 backdrop-blur-md"
       )}
     >
       <div
-        className={cn("max-w-6xl mx-auto flex justify-between items-center")}
+        className={cn("mx-auto flex max-w-6xl items-center justify-between")}
       >
         <Link href="/" className={cn("flex items-center gap-2")}>
           <Image
@@ -27,11 +28,11 @@ export const Header = () => {
           </span>
         </Link>
 
-        <div className={cn("hidden md:flex items-center gap-8")}>
+        <div className={cn("hidden items-center gap-8 md:flex")}>
           <Link
             href="#"
             className={cn(
-              "text-sm text-muted-foreground hover:text-foreground"
+              "text-muted-foreground text-sm hover:text-foreground"
             )}
           >
             How it Works
@@ -39,7 +40,7 @@ export const Header = () => {
           <Link
             href="#"
             className={cn(
-              "text-sm text-muted-foreground hover:text-foreground"
+              "text-muted-foreground text-sm hover:text-foreground"
             )}
           >
             Pricing
@@ -47,7 +48,7 @@ export const Header = () => {
           <Link
             href="#"
             className={cn(
-              "text-sm text-muted-foreground hover:text-foreground"
+              "text-muted-foreground text-sm hover:text-foreground"
             )}
           >
             About

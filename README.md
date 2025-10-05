@@ -92,6 +92,56 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Development Scripts
+
+- `bun dev` - Start the development server
+- `bun build` - Build the application for production
+- `bun start` - Start the production server
+- `bun lint` - Run linting checks
+- `bun lint:fix` - Run linting checks and fix issues
+- `bun format` - Format code using Biome
+- `bun format:check` - Check code formatting
+- `bun organize-imports` - Organize and sort imports
+- `bun check-imports` - Check import organization
+
+## Code Quality & Import Sorting
+
+This project uses [Biome](https://biomejs.dev/) for code formatting, linting, and import organization. Import sorting is automatically configured with the following priority:
+
+1. **Built-in modules** (Node.js modules)
+2. **External packages** (React, Next.js, third-party libraries)
+3. **Internal modules** (Your application code with `@/` alias)
+
+### Import Organization Rules
+
+```tsx
+// ✅ Good - Properly organized imports
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import { SignInButton } from "@clerk/nextjs";
+import { SomeThirdPartyLib } from "some-library";
+
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+```
+
+### Automatic Import Sorting
+
+- **On Save**: Imports are automatically organized when you save files (configured in `.vscode/settings.json`)
+- **Manual**: Run `bun organize-imports` to organize imports across all files
+- **CI/CD**: Import organization is checked in the build process
+
+### VSCode Setup
+
+Install the recommended extensions:
+
+- **Biome** (`biomejs.biome`) - Primary formatter and linter
+- **Tailwind CSS IntelliSense** (`bradlc.vscode-tailwindcss`) - Tailwind support
+
+The workspace is pre-configured to use Biome for formatting and import organization.
+
 ## Deployment
 
 This application is deployed on Sevalla, which is free-tier friendly. Follow Sevalla's deployment documentation to deploy your Next.js application.
