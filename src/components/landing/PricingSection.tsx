@@ -39,7 +39,7 @@ export const PricingSection = () => {
             <span className={cn('text-primary text-sm font-medium')}>Simple Pricing</span>
           </div>
 
-          <h2 className={cn('tracking-light mb-6 text-4xl font-bold md:text-5xl lg:text-6xl')}>
+          <h2 className={cn('mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl')}>
             <span className={cn('from-foreground to-foreground/70 bg-gradient-to-br bg-clip-text text-transparent')}>
               Choose your
             </span>

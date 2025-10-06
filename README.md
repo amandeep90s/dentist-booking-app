@@ -78,10 +78,10 @@ RESEND_API_KEY=your_resend_api_key
 VAPI_API_KEY=your_vapi_api_key
 ```
 
-4. Run database migrations (if applicable):
+4. Run database migrations after creating Prisma schema:
 
 ```bash
-# Add your migration command here
+bunx prisma db push
 ```
 
 5. Start the development server:
