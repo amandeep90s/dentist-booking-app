@@ -19,7 +19,7 @@ export const HowItWorks = () => (
         <span className={cn('text-primary text-sm font-medium')}>Simple Process</span>
       </div>
 
-      <h2 className={cn('mg:text-5xl mb-6 text-4xl font-bold tracking-tight lg:text-6xl')}>
+      <h2 className={cn('mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl')}>
         <span className={cn('from-foreground to-foreground/70 bg-gradient-to-br bg-clip-text text-transparent')}>
           Three steps to
         </span>
