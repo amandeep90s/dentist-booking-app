@@ -51,7 +51,7 @@ model Doctor {
 model Appointment {
   id        String            @id @default(cuid())
   date      DateTime
-  time      String // store time as string in HH:MM format
+  time      DateTime @db.Time // store time as native time type
   duration  Int               @default(30)
   status    AppointmentStatus @default(CONFIRMED)
   notes     String?
